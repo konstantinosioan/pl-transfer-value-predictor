@@ -4,3 +4,4 @@ jupyter
 matplotlib
 seaborn
 scikit-learn>=1.3
+joblib
