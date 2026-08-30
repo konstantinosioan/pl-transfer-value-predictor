@@ -6,6 +6,7 @@ predicts a player's market value from their stats. The user chooses which model
 to use: model A (career totals) or model B (a single season).
 """
 
+import os
 import sys
 
 import gradio as gr
@@ -120,4 +121,4 @@ demo = gr.Interface(
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", "7860")))
